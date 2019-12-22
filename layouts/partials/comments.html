@@ -15,7 +15,6 @@
     
                     <div id="commentid-{{ ._id }}" class="post-comment">
                         <div class="post-comment-header">
-                        <img class="post-comment-avatar" src="https://www.gravatar.com/avatar/{{     .email }}?s=70&r=pg&d=identicon">
                             <p class="post-comment-info">
                                 <span class="post-comment-name">{{ .name }}</span>
                                 <br>
@@ -46,20 +45,11 @@
             <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#comment-submitted">
             <input type="hidden" name="options[slug]" value="{{ .File.BaseFileName }}">
             <input type="text" name="fields[name]" class="post-comment-field" placeholder="Name *" required/>
-            <input type="email" name="fields[email]" class="post-comment-field" placeholder="Email address (will not be public) *" required/>
             <input type="hidden" id="comment-parent" name="fields[reply_to]" value="">
             <textarea name="fields[comment]" class="post-comment-field" placeholder="Comment (markdown is accepted) *" required rows="10"></textarea>
             <input type="submit" class="post-comment-field btn btn-primary comment-buttons" value="Submit">
         </form>
     </section>
-
-    <div id="comment-submitted" class="dialog">
-        <h3>Thank you!</h3>
-        <p>Your comment has been submitted and will be published once it has been approved. &#128522;</p>
-
-        <p><a href="#" class="btn btn-primary comment-buttons ok">OK</a></p>
-    </div>
-
     {{ end }}
 </section>
 {{ end }}
