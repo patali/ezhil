@@ -101,6 +101,7 @@ a:hover {
   -o-text-overflow: clip;
   text-overflow: clip;
   background: #ff7979dd;
+  margin: 0 3px 0 3px;
   -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
   -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
