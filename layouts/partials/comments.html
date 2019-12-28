@@ -41,10 +41,12 @@
             <h3 class="prompt">Say something</h3>
             <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#comment-submitted">
             <input type="hidden" name="options[slug]" value="{{ .File.BaseFileName }}">
-            <div><input type="text" name="fields[name]" class="post-comment-field" placeholder="Name *" required/></div>
+            <input type="text" name="fields[name]" class="post-comment-field" placeholder="Name *" required/>
+            <br />
             <input type="hidden" id="comment-parent" name="fields[reply_to]" value="">
-            <div><textarea name="fields[comment]" class="post-comment-field" placeholder="Comment (markdown is accepted) *" required rows="10"></textarea></div>
-            <div><input type="submit" class="post-comment-field btn btn-primary comment-buttons" value="Submit"></div>
+            <textarea name="fields[comment]" class="post-comment-field" placeholder="Comment (markdown is accepted) *" required rows="10"></textarea>
+            <br />
+            <input type="submit" class="post-comment-field btn btn-primary comment-buttons" value="Submit">
         </form>
     </section>
     {{ end }}
