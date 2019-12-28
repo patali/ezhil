@@ -26,12 +26,8 @@
                         <div class="comment-message">
                             {{ .comment | markdownify }}
                         </div>
-                        <div class="comment__reply">
-                        <button id="{{ ._id }}" class="btn-info" href="#comment-form" onclick="changeValue('fields[reply_to]', '{{ ._id }}')">Reply to {{ .name     }}</button>
-                        </div>
                     </div>
-                {{ partial "comment-replies" (dict "entryId_parent" $postSlug "SiteDataComments_parent" $.Site.Data.comments "parentId" ._id "parentName" .name     "context" .) }}
-    
+                    
                     {{ end }}
             {{ end }}
         {{ end }}
