@@ -116,9 +116,14 @@ a:hover {
 }
 
 .post-comment-name {
-  font-size: 0.9rem;
+  font-size: 0.925rem;
+  font-weight: bold;
 }
 
 .post-comment-time {
-  font-size: 0.725rem;
+  font-size: 0.7rem;
+}
+
+.post-comment-message {
+  font-size: 0.925rem;
 }
