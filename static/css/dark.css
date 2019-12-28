@@ -108,6 +108,7 @@ a:hover {
 } 
 
 .post-comment {
+  padding: 13px;
 }
 
 .post-comment-info {
@@ -126,4 +127,5 @@ a:hover {
 
 .post-comment-message {
   font-size: 0.925rem;
+  font-weight: lighter;
 }
