@@ -58,3 +58,8 @@ a:hover {
 .highlight {
 	background-color: #333;
 }
+
+#comments {
+  margin-top: 4px;
+  border-top: 1px solid #f4f4f4;
+}
