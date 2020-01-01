@@ -1,4 +1,6 @@
 {{- if isset .Site.Params.ErrorPage "title" -}}
-  <h4 style="align:center;">>{{ .Title }}</h4>
-  <img src="{{ .Image }}" alt="patali.in 404 image" style="align:center;"/>
+  <h3 style="text-align:center;">{{ .Site.Params.ErrorPage.Title }}</h3>
+{{ end }}
+{{- if isset .Site.Params.ErrorPage "image" -}}
+  <img src="{{ .Site.Params.ErrorPage.Image }}" alt="patali.in 404 image" style="align:center;"/>
 {{ end }}
